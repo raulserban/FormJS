@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MyForm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <form name="formClass" id="login-form" action="./messageLoginSucces.html" method="GET">
+                <div>
+                    <input id="usernameLogin" placeholder="Username" type="text">
+                </div>
+                <br>
+                <div>
+                    <input id="passwordLogin" placeholder="Password" type="password">
+                </div>
+                <br>
+                <button type="submit">Login</button>
+                <p class="message">Not registered?
+                    <a href="#"><b>Register</b></a>
+                </p>
+                <br>
+                <div id="errorLogin"></div>
+           
+            </form>
+            
+
+            <form name="formClass" id="register-form" action="./messageRegisterSucces.html" method="GET">
+                <div>
+                    <input id="usernameRegister" placeholder="Username" type="text">
+                </div>
+                <br>
+                <div>
+                    <input id="passwordRegister" placeholder="Password" type="password">
+                </div>
+                <br>
+                <div>
+                    <input id="emailRegister" placeholder="Email" type="email">
+                </div>
+                <br>
+                <button type="submit">Create</button>
+                <p class="message">Already registered?
+                    <a href="#"><b>Login</b></a>
+                </p>
+                <br>
+                <div id="errorRegister"></div>
+            </form>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
